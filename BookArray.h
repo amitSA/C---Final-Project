@@ -1,3 +1,6 @@
+/* BookArray class is a class that will hold variables/information
+on a certain book such as ISBN codes and book titles.
+*/
 #ifndef BOOKARRAY_H
 #define BOOKARRAY_H
 #include "stdafx.h"
@@ -28,6 +31,7 @@ public:
 
 //public:
 	BookInfo(); //Constructor
+	int monthConvert(BookInfo *, int);//month conversion function that takes a BookInfo * object and an int
 
 	//Mutators
 	void setISBN(string);
@@ -45,9 +49,10 @@ public:
 	void setRetail(string);
 	
 	//Accessors
-	string getISBN() const
+	string getISBN(BookInfo * book, int pos) const
 	{
-		return ISBN;
+
+		return book[pos].ISBN;
 	}
 	string getBookTitle() const
 	{
@@ -89,7 +94,7 @@ public:
 	{
 		return retail;
 	}
-};
 
+};
 
 #endif

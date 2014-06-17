@@ -1,3 +1,6 @@
+/* File that holds information of the functions from 
+the BookArray class
+*/
 #include "stdafx.h"
 #include <iostream>
 #include <string>
@@ -24,7 +27,7 @@ BookInfo::BookInfo()
 	retail = "";
 
 }
-
+//Mutators
 void BookInfo::setISBN(string number)
 {
 	ISBN = number;
@@ -59,7 +62,9 @@ void BookInfo::setYear(string yr)
 {
 	year = yr;
 }
-
+/***************************************************
+Setting up the date the hard way
+*/
 void BookInfo::setDate()
 {
 	//Putting the month, day and year into the date array.
@@ -90,7 +95,83 @@ void BookInfo::setDate()
 			}
 		}
 }
+/***************************************************
+Function used to convert the name of a month to a 
+numberically value to easily sort by date
+*/
+int BookInfo::monthConvert(BookInfo *book, int position)
+{
+	//Strings for all of the months to compare to the book's info
+	string m1 = "January";
+	string m2 = "February";
+	string m3 = "March";
+	string m4 = "April";
+	string m5 = "May";
+	string m6 = "June";
+	string m7 = "July";
+	string m8 = "August";
+	string m9 = "September";
+	string m10 = "October";
+	string m11 = "November";
+	string m12 = "December";
 
+	int convert; //variable that will act as the converted month and will be return
+
+	//If the book's month matches one of the strings,
+	//convert will equal the numberical value of that month
+	if(m1.compare(book[position].month) == 0)
+	{
+		convert = 1;
+	}
+	if(m2.compare(book[position].month) == 0)
+	{
+		convert = 2;
+	}
+	if(m3.compare(book[position].month) == 0)
+	{
+		convert = 3;
+	}
+	if(m4.compare(book[position].month) == 0)
+	{
+		convert = 4;
+	}
+	if(m5.compare(book[position].month) == 0)
+	{
+		convert = 5;
+	}
+	if(m6.compare(book[position].month) == 0)
+	{
+		convert = 6;
+	}
+	if(m7.compare(book[position].month) == 0)
+	{
+		convert = 7;
+	}
+	if(m8.compare(book[position].month) == 0)
+	{
+		convert = 8;
+	}
+	if(m9.compare(book[position].month) == 0)
+	{
+		convert = 9;
+	}
+	if(m10.compare(book[position].month) == 0)
+	{
+		convert = 10;
+	}
+	if(m11.compare(book[position].month) == 0)
+	{
+		convert = 11;
+	}
+	if(m12.compare(book[position].month) == 0)
+	{
+		convert = 12;
+	}
+
+	return convert;
+}
+
+//More mutators...yay
 void BookInfo::setQuantity(string number)
 {
 	quantity = number;
