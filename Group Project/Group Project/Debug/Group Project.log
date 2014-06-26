@@ -1,0 +1,50 @@
+﻿Build started 6/25/2014 5:54:41 PM.
+     1>Project "G:\C++\C++ Workspace\Group Project\Group Project\Group Project.vcxproj" on node 2 (Rebuild target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppClean.targets(76,5): warning : Access to the path 'g:\c++\c++ workspace\group project\debug\group project.exe' is denied.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Book.cpp BookList.cpp CashierModule.cpp Date.cpp InventoryDatabaseModule.cpp main.cpp Module.cpp RepotModule.cpp
+         RepotModule.cpp
+         Module.cpp
+     1>g:\c++\c++ workspace\group project\group project\module.cpp(19): warning C4305: 'argument' : truncation from 'int' to 'char'
+     1>g:\c++\c++ workspace\group project\group project\module.cpp(19): warning C4309: 'argument' : truncation of constant value
+     1>g:\c++\c++ workspace\group project\group project\module.cpp(30): warning C4305: 'argument' : truncation from 'int' to 'char'
+     1>g:\c++\c++ workspace\group project\group project\module.cpp(30): warning C4309: 'argument' : truncation of constant value
+     1>g:\c++\c++ workspace\group project\group project\module.cpp(34): warning C4554: '&' : check operator precedence for possible error; use parentheses to clarify precedence
+     1>g:\c++\c++ workspace\group project\group project\module.cpp(35): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>g:\c++\c++ workspace\group project\group project\module.cpp(44): warning C4305: 'argument' : truncation from 'int' to 'char'
+     1>g:\c++\c++ workspace\group project\group project\module.cpp(44): warning C4309: 'argument' : truncation of constant value
+     1>g:\c++\c++ workspace\group project\group project\module.cpp(42): warning C4101: 'returnVal' : unreferenced local variable
+     1>g:\c++\c++ workspace\group project\group project\module.cpp(54): warning C4305: 'argument' : truncation from 'int' to 'char'
+     1>g:\c++\c++ workspace\group project\group project\module.cpp(54): warning C4309: 'argument' : truncation of constant value
+         main.cpp
+         InventoryDatabaseModule.cpp
+     1>g:\c++\c++ workspace\group project\group project\inventorydatabasemodule.cpp(85): warning C4018: '<' : signed/unsigned mismatch
+     1>g:\c++\c++ workspace\group project\group project\inventorydatabasemodule.cpp(89): warning C4018: '>' : signed/unsigned mismatch
+     1>g:\c++\c++ workspace\group project\group project\inventorydatabasemodule.cpp(316): warning C4018: '<' : signed/unsigned mismatch
+     1>g:\c++\c++ workspace\group project\group project\inventorydatabasemodule.cpp(320): warning C4018: '>' : signed/unsigned mismatch
+         Date.cpp
+         CashierModule.cpp
+     1>g:\c++\c++ workspace\group project\group project\cashiermodule.cpp(70): warning C4018: '<' : signed/unsigned mismatch
+     1>g:\c++\c++ workspace\group project\group project\cashiermodule.cpp(74): warning C4018: '>' : signed/unsigned mismatch
+     1>g:\c++\c++ workspace\group project\group project\cashiermodule.cpp(95): warning C4018: '<' : signed/unsigned mismatch
+     1>g:\c++\c++ workspace\group project\group project\cashiermodule.cpp(115): warning C4018: '<' : signed/unsigned mismatch
+         BookList.cpp
+     1>g:\c++\c++ workspace\group project\group project\booklist.cpp(99): warning C4018: '<' : signed/unsigned mismatch
+     1>g:\c++\c++ workspace\group project\group project\booklist.cpp(110): warning C4018: '<' : signed/unsigned mismatch
+         Book.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\C++\C++ Workspace\Group Project\Debug\Group Project.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"G:\C++\C++ Workspace\Group Project\Debug\Group Project.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\C++\C++ Workspace\Group Project\Debug\Group Project.lib" /MACHINE:X86 Debug\Book.obj
+         Debug\BookList.obj
+         Debug\CashierModule.obj
+         Debug\Date.obj
+         Debug\InventoryDatabaseModule.obj
+         Debug\main.obj
+         Debug\Module.obj
+         Debug\RepotModule.obj
+     1>LINK : fatal error LNK1104: cannot open file 'G:\C++\C++ Workspace\Group Project\Debug\Group Project.exe'
+     1>Done Building Project "G:\C++\C++ Workspace\Group Project\Group Project\Group Project.vcxproj" (Rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:07.74
