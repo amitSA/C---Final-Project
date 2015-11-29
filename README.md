@@ -13,4 +13,3 @@ to select
 
 
 The executable is in the directory GroupProject\Debug
- NOTE: To run the executable your computer might need Visual Studio 13 allready installed in it
